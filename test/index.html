@@ -30,52 +30,81 @@
     <div class="container">
       <div class="row">
         <div class="column">
-          <div id="holder">
-            <div class="bmi_wrapper">
-              <div class="bmi_form">
-                <form action="">
-                  <div class="bmi_height">
-                    <h3>Your Height:</h3>
-                    <div class="row">
-                      <div class="column">
-                        <input type="text" name="hFeet" id="hFeet" />
-                        <label for="hFeet">feet</label>
-                      </div>
-                      <div class="column">
-                        <input type="text" name="hInch" id="hInch" />
-                        <label for="hInch">inchs</label>
-                      </div>
+          <div class="bmi_wrapper">
+            <div class="bmi_form">
+              <form action="">
+                <div class="bmi_height">
+                  <h3>Your Height:</h3>
+                  <div class="row">
+                    <div class="column">
+                      <input type="text" name="hFeet" id="hFeet" />
+                      <label for="hFeet">feet</label>
+                    </div>
+                    <div class="column">
+                      <input type="text" name="hInch" id="hInch" />
+                      <label for="hInch">inchs</label>
                     </div>
                   </div>
-                  <!-- bmi_height -->
-                  <div class="bmi_weight">
-                    <h3>Your weight:</h3>
-                    <div class="row">
-                      <div class="column">
-                        <input type="text" name="wKg" id="wKg" />
-                        <label for="wKg">Kg</label>
-                      </div>
+                </div>
+                <!-- bmi_height -->
+                <div class="bmi_weight">
+                  <h3>Your weight:</h3>
+                  <div class="row">
+                    <div class="column">
+                      <input type="text" name="wKg" id="wKg" />
+                      <label for="wKg">Kg</label>
                     </div>
                   </div>
-                  <!-- bmi_weight -->
-                  <div class="bmi_btn">
-                    <input type="submit" value="Calculate BMI" id="submit" />
-                  </div>
-                  <!-- bmi_btn -->
-                </form>
-              </div>
-              <!-- bmi_form -->
-              <div class="bmi_result">
-                Your BMI is: <span id="result_area"></span>
-              </div>
-
-              <!-- bmi_result -->
-              <div class="bmi_scale"></div>
-              <!-- bmi_scale -->
+                </div>
+                <!-- bmi_weight -->
+                <div class="bmi_btn">
+                  <input type="submit" value="Calculate BMI" id="submit" />
+                </div>
+                <!-- bmi_btn -->
+              </form>
             </div>
-            <!-- bmi_wrapper -->
+            <!-- bmi_form -->
+            <div class="bmi_result">
+              <div class="bmi">
+                Your BMI is: <span id="result_area">0</span> kg/m<sup>2</sup>
+              </div>
+              <div class="wStatus">Weight Status: <span id="wst"></span></div>
+            </div>
+
+            <!-- bmi_result -->
+            <div class="bmi_scale">
+              <div class="row">
+                <div class="column clm_thin">
+                  <div class="row color">
+                    <div class="column class1 column-50"></div>
+                    <div class="column class2 column-25"></div>
+                    <div class="column class3 column-25"></div>
+                  </div>
+                </div>
+                <!-- column_thin -->
+                <div class="column clm_normal">
+                  <div class="row color">
+                    <div class="column class1"></div>
+                  </div>
+                </div>
+                <!-- column_normal -->
+                <div class="column clm_overWeight">
+                  <div class="row color">
+                    <div class="column class1"></div>
+                  </div>
+                </div>
+                <div class="column clm_obesity">
+                  <div class="row color">
+                    <div class="column class1"></div>
+                    <div class="column class2"></div>
+                    <div class="column class3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- bmi_scale -->
           </div>
-          <!-- holder -->
+          <!-- bmi_wrapper -->
         </div>
         <!-- column -->
       </div>
