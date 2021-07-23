@@ -33,13 +33,43 @@
           <div id="holder">
             <div class="bmi_wrapper">
               <div class="bmi_form">
-                <div class="bmi_height"></div>
-                <div class="bmi_weight"></div>
-                <div class="bmi_btn"></div>
+                <form action="">
+                  <div class="bmi_height">
+                    <h3>Your Height:</h3>
+                    <div class="row">
+                      <div class="column">
+                        <input type="text" name="hFeet" id="hFeet" />
+                        <label for="hFeet">feet</label>
+                      </div>
+                      <div class="column">
+                        <input type="text" name="hInch" id="hInch" />
+                        <label for="hInch">inchs</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- bmi_height -->
+                  <div class="bmi_weight">
+                    <h3>Your weight:</h3>
+                    <div class="row">
+                      <div class="column">
+                        <input type="text" name="wKg" id="wKg" />
+                        <label for="wKg">Kg</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- bmi_weight -->
+                  <div class="bmi_btn">
+                    <input type="submit" value="Calculate BMI" />
+                  </div>
+                  <!-- bmi_btn -->
+                </form>
               </div>
               <!-- bmi_form -->
               <div class="bmi_result"></div>
+
               <!-- bmi_result -->
+              <div class="bmi_scale"></div>
+              <!-- bmi_scale -->
             </div>
             <!-- bmi_wrapper -->
           </div>
