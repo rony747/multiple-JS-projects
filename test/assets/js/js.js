@@ -16,6 +16,10 @@ function bmiFunc(event) {
   const final = calculation.toFixed(2);
   result.innerHTML = final;
 
+  document.querySelectorAll(".bmi_scale .column").forEach((el) => {
+    el.classList.remove("active");
+  });
+
   if (final < 16) {
     wStatus.innerHTML = "Severe Thinness";
     document.querySelector(".thin1").classList.add("active");
@@ -41,5 +45,4 @@ function bmiFunc(event) {
     wStatus.innerHTML = "Mild Thinness";
     document.querySelector(".obs3").classList.add("active");
   }
-  console.log(wStatus.innerHTML);
 }
