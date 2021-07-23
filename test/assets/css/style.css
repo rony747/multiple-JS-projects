@@ -1,32 +1,35 @@
 .color .column {
   height: 30px;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
 }
-.clm_thin .color .class1 {
+.clm_thin .thin1 {
   background: #ff9595;
 }
-.clm_thin .color .class2 {
+.clm_thin .thin2 {
   background: #ffafaf;
 }
-.clm_thin .color .class3 {
+.clm_thin .thin3 {
   background: #ffdab6;
 }
-.clm_normal .color .column {
+.clm_normal .norm1 {
   background: #4e9b00;
 }
-.clm_overWeight .color .column {
+.clm_overWeight .ow1 {
   background: #f5f500;
 }
 
-.clm_obesity .color .class1 {
+.clm_obesity .obs1 {
   background: #ff7474;
 }
-.clm_obesity .color .class2 {
+.clm_obesity .obs2 {
   background: #ff3e3e;
 }
-.clm_obesity .color .class3 {
+.clm_obesity .obs3 {
   background: #db0000;
 }
 .active {
   transform: scale(1.5);
+}
+.bmi_scale {
+  margin-top: 30px;
 }
