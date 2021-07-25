@@ -27,81 +27,24 @@
     <div class="container">
       <div class="row">
         <div class="column">
-          <div class="bmi_wrapper">
-            <div class="bmi_inner">
-              <div class="bmi_title"><h4>Simple BMI calculator</h4></div>
-              <!-- bmi_title -->
-              <div class="bmi_form">
-                <form action="">
-                  <div class="bmi_height">
-                    <h3>Your Height:</h3>
-                    <div class="row">
-                      <div class="column">
-                        <input type="text" name="hFeet" id="hFeet" placeholder="feet" />
-                      </div>
-                      <div class="column">
-                        <input type="text" name="hInch" id="hInch" placeholder="inchs" />
-                      </div>
-                    </div>
-                  </div>
-                  <!-- bmi_height -->
-                  <div class="bmi_weight">
-                    <h3>Your weight:</h3>
-                    <div class="row">
-                      <div class="column">
-                        <input type="text" name="wKg" id="wKg" placeholder="in Kg" />
-                      </div>
-                    </div>
-                  </div>
-                  <!-- bmi_weight -->
-                  <div class="bmi_btn">
-                    <input type="submit" value="Calculate BMI" id="submit" />
-                  </div>
-                  <!-- bmi_btn -->
-                </form>
-              </div>
-              <!-- bmi_form -->
-              <div class="bmi_result">
-                <div class="bmi">Your BMI is: <span id="result_area">0</sup></div>
-                <div class="wStatus">Weight Status: <span id="wst">None</span></div>
-              </div>
+          <h1>
+            The RGB Color Guessing Game
+            <br />
+            <span id="colorDisplay">RGB</span>
+          </h1>
 
-              <!-- bmi_result -->
-            </div>
-            <!-- bmi_inner -->
-            <div class="bmi_scale">
-              <div class="row">
-                <div class="column clm_thin">
-                  <div class="row color">
-                    <div class="column thin1 column-50"></div>
-                    <div class="column thin2 column-25"></div>
-                    <div class="column thin3 column-25"></div>
-                  </div>
-                </div>
-                <!-- column_thin -->
-                <div class="column clm_normal">
-                  <div class="row color">
-                    <div class="column norm1"></div>
-                  </div>
-                </div>
-                <!-- column_normal -->
-                <div class="column clm_overWeight">
-                  <div class="row color">
-                    <div class="column ow1"></div>
-                  </div>
-                </div>
-                <div class="column clm_obesity">
-                  <div class="row color">
-                    <div class="column obs1"></div>
-                    <div class="column obs2"></div>
-                    <div class="column obs3"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- bmi_scale -->
+          <div id="stripe">
+            <button id="reset">New Colors</button>
+            <span id="message"></span>
           </div>
-          <!-- bmi_wrapper -->
+          <div id="container">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+          </div>
         </div>
         <!-- column -->
       </div>

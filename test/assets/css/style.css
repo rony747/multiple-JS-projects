@@ -1,131 +1,69 @@
-body {
-  background-image: linear-gradient(to right top, #f6ede8, #f7e9e1, #f7e5da, #f7e1d3, #f7ddcc);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-}
-.color .column {
-  height: 10px;
-  transition: all 0.2s ease-in;
-}
-.clm_thin .thin1 {
-  background: hsl(0, 100%, 79%);
-}
-.clm_thin .thin2 {
-  background: hsl(0, 100%, 84%);
-}
-.clm_thin .thin3 {
-  background: hsl(30, 100%, 86%);
-}
-.clm_normal .norm1 {
-  background: hsl(90, 100%, 30%);
-}
-.clm_overWeight .ow1 {
-  background: hsl(60, 100%, 48%);
+.square {
+  width: 30%;
+  background: purple;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+  border-radius: 15%;
+  transition: background 0.6s;
+  -webkit-transition: background 0.6s;
+  -moz-transition: background 0.6s;
 }
 
-.clm_obesity .obs1 {
-  background: hsl(0, 100%, 73%);
-}
-.clm_obesity .obs2 {
-  background: hsl(0, 100%, 62%);
-}
-.clm_obesity .obs3 {
-  background: hsl(0, 100%, 43%);
+#container {
+  margin: 20px auto;
+  max-width: 600px;
 }
 
-.clm_thin .thin1.active {
-  box-shadow: -2px -5px 30px hsl(0, 100%, 89%);
-}
-.clm_thin .thin2.active {
-  box-shadow: -2px -5px 30px hsl(0, 100%, 74%);
-}
-.clm_thin .thin3.active {
-  box-shadow: -2px -5px 30px hsl(30, 100%, 75%);
-}
-.clm_normal .norm1.active {
-  box-shadow: -2px -5px 30px hsl(90, 100%, 70%);
-}
-.clm_overWeight .ow1.active {
-  box-shadow: -2px -5px 30px hsl(60, 100%, 80%);
-}
-
-.clm_obesity .obs1.active {
-  box-shadow: -2px -5px 30px hsl(0, 100%, 85%);
-}
-.clm_obesity .obs2.active {
-  box-shadow: -2px -5px 30px hsl(0, 100%, 80%);
-}
-.clm_obesity .obs3.active {
-  box-shadow: -2px -5px 30px hsl(0, 100%, 75%);
-}
-
-.active {
-  transform: scale(1.5);
-}
-.bmi_scale {
-  margin-top: 30px;
-}
-.bmi_wrapper {
-  border-radius: 10px;
-  max-width: 400px;
-  margin: 30px auto;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0px 8px 24px rgb(0 0 0 / 10%);
-}
-.bmi_inner {
-  padding: 30px;
-}
-
-.bmi_result {
-  background: #fff;
-  padding: 20px;
+h1 {
   text-align: center;
-  font-weight: 700;
-  box-shadow: 2px 5px 10px #f6ede8;
-  border-radius: 3px;
+  line-height: 1.1;
+  font-weight: normal;
+  color: white;
+  background: steelblue;
+  margin: 0;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.bmi_form h3 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 5px;
+
+#colorDisplay {
+  font-size: 200%;
 }
-.bmi_height {
-  margin-bottom: 10px;
+
+#stripe {
+  background: white;
+  height: 30px;
+  text-align: center;
+  color: black;
 }
-.bmi_form input {
-  border-radius: 3px;
-  border: 2px solid #ddd;
+
+.selected {
+  color: white;
+  background: steelblue;
 }
-.bmi_form input:focus,
-.bmi_form input:active {
-  box-shadow: 2px 5px 15px rgba(0, 0, 0, 10%);
-  border: 2px solid #ddd;
-  background: #fff;
-}
-.bmi_form input::placeholder {
-  font-weight: 500;
-  color: #ccc;
-}
-#submit {
-  background: #e59f6e;
-  width: 100%;
-  border-radius: 3px;
+
+button {
   border: none;
-  margin-top: 20px;
-  font-size: 14px;
+  background: none;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  color: steelblue;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  outline: none;
 }
 
-.bmi_title {
-  background: #f6ede8;
-  text-align: center;
-  padding: 10px;
-  border-radius: 3px;
-  margin-bottom: 15px;
+#message {
+  display: inline-block;
+  width: 20%;
 }
-.bmi_title h4 {
-  margin-bottom: 0;
-  font-weight: 600;
-  font-size: 16px;
+
+button:hover {
+  color: white;
+  background: steelblue;
 }
